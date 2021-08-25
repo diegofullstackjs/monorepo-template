@@ -1,0 +1,32 @@
+{
+    "name": "@diegojs/root",
+    "private": true,
+    "author": "kelvin diego da silva soares < kelvin.fabiana@gmail.com >",
+    "devDependencies": {
+        "@craco/craco": "^6.2.0",
+        "@diegojs/eslint-ts": "*",
+        "lerna": "^4.0.0",
+        "cross-env": "^7.0.3",
+        "fork-ts-checker-webpack-plugin": "^6.3.2",
+        "tsconfig-paths-webpack-plugin": "^3.5.1",
+        "@types/jest": "^26.0.5",
+        "jest": "27.0.6",
+        "ts-jest": "^27.0.3"
+    },
+    "scripts": {
+        "test": "jest",
+        "lint": "eslint --ext js,ts,tsx .",
+        "web:dev": "yarn lerna  run --stream front-react:start",
+        "web:build": "yarn lerna run --stream front-react:build" ,
+        "back:dev" : "yarn lerna run --stream backend:start:dev" , 
+        "ssr:dev" : "yarn lerna run --stream ssr-next:dev",
+        "ssr:start" : "yarn lerna run --stream ssr-next:start" ,
+        "ssr:build" : "yarn lerna run --stream ssr-next:build" 
+    },
+    "workspaces": [
+        "packages/*",
+        "packages/web/**/*",
+        "packages/backend/**/*",
+        "config/**/*"
+    ]
+}
