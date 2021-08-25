@@ -1,4 +1,4 @@
-<h1 align="center">Grupo Tiradentes</h1>
+<h1 align="center">Monorepo Template</h1>
 <h4 align="center"> 
 	🚧  Monorepo 🚀 Template..  🚧
 </h4>
